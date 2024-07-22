@@ -1,0 +1,154 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./images/background3.jpg");
+}
+
+.login-container {
+  display: flex;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 590px; /* Adjust width as needed */
+  position: relative; /* Needed for overlapping icon */
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute; /* Absolute positioning */
+  top: -50px; /* Adjust vertical position */
+  left: -60px; /* Adjust horizontal position */
+}
+
+.educational-icon {
+  margin-top: 50px;
+  width: 240px;
+  height: 473px;
+  margin-left: 59px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.form-container {
+  margin-left: 220px; /* Adjust to make space for the icon */
+  flex: 1;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #FFB83F;
+  Font-size: 30px;
+}
+
+.bold-text {
+  font-weight: bold;
+  font-size: 1.2em; /* Adjust size as needed */
+}
+
+.form-container form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container .form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-container .form-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background: #ffcc00; /* Adjust button color as needed */
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form-container .form-actions button:hover {
+  background: #ffbb00; /* Adjust hover color as needed */
+}
+
+.form-container .form-actions a {
+  color: #007bff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.login-options {
+  margin-top: 20px;
+}
+
+.login-options a {
+  display: block;
+  margin: 10px 0;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.social-login {
+  margin: 20px 0;
+}
+
+.social-login p {
+  margin: 10px 0;
+}
+
+.social-login .google-btn, .social-login .facebook-btn {
+  width: 47%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 7px;
+}
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+.google-btn, .facebook-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 8px 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+.google-btn {
+  background: #db4437;
+  color: white;
+}
+
+.google-btn i {
+  margin-right: 8px;
+}
+
+.facebook-btn {
+  background: #4267b2;
+  color: white;
+}
+
+.facebook-btn i {
+  margin-right: 8px;
+}
+
+.google-btn:hover {
+  background: #c33d30;
+}
+
+.facebook-btn:hover {
+  background: #365899;
+}

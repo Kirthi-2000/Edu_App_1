@@ -1,0 +1,23 @@
+/* CustomTabs.css */
+.custom-tab {
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .custom-tab:hover {
+    color: #007bff;
+    transform: scale(1.1);
+  }
+  
+  .upload-tab {
+    background: linear-gradient(90deg, rgba(0,123,255,1) 0%, rgba(0,150,255,1) 100%);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .upload-tab:hover {
+    background: linear-gradient(90deg, rgba(0,150,255,1) 0%, rgba(0,123,255,1) 100%);
+    transform: scale(1.1);
+  }

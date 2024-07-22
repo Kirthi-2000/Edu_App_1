@@ -1,0 +1,119 @@
+.modal-90w {
+    max-width: 80% !important;
+    top:30px;
+  }
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff00;
+    padding: 1px;
+    max-height: 317px;
+    position: relative;
+    border-right: 1px solid #ddd0;
+    margin-left: -80px;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    max-height: 250px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .sidebar-item {
+    margin: 35px 0;
+    font-weight: normal;
+    transition: font-weight 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .sidebar-item.active {
+    font-weight: bold;
+    padding: 55px 10px;
+  }
+  
+  .scroll-arrow {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 3px;
+    color: #888;
+    transition: color 0.3s ease;
+  }
+  
+  .scroll-arrow:hover {
+    color: #333;
+  }
+  
+  .up-arrow {
+    font-weight: 900;
+    position: absolute;
+    top: 2px;
+  }
+  
+  .down-arrow {
+    position: absolute;
+    bottom: 2px;
+  }
+  
+  .popup-content {
+    animation: fadeInRight 1s ease-out;
+    flex-direction: column;
+    padding: 1px;
+    
+  }
+  .modal.show .modal-dialog {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    float: right !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 1000px;
+  }
+  .modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: var(--bs-modal-padding);
+    border-top-left-radius: 87px !important;
+    margin-left: 65px !important;
+    
+}
+.modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    padding: var(--bs-modal-header-padding);
+    border-bottom: var(--bs-modal-header-border-width) solid #dee2e600 !important;
+    border-top-left-radius: var(--bs-modal-inner-border-radius);
+    border-top-right-radius: var(--bs-modal-inner-border-radius);
+}
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
